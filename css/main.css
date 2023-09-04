@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/opendyslexic');
+@import url('https://fonts.cdnfonts.com/css/billy-whites');
+@import url('https://fonts.cdnfonts.com/css/planet-megapolis');
+@import url('https://fonts.cdnfonts.com/css/master-of-break');
+:root{
+    --first-color:#42b883;
+    --second-color:  #347474; 
+}
+
+/*Selector universal*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    width: 100vw;
+    /*Altura minima del dispositivo*/
+    min-height: auto; /*view height*/
+    /*Establecer un fondo con un degradado lineal*/
+    /*Linea-gradient(180) se encarga de crear un degradado en sentido de los grados*/
+    background: linear-gradient(90deg, var(--first-color) 0%, var(--second-color)100%);
+    display: flex;
+    border-bottom: 3px outset #347474b5;  /*0.1 representa opacidad*/
+    justify-content: space-between; /*Le da espacio entre elementos*/
+}
+
+nav > article > a{
+    display: inline-block; /*Le especifico que alinee con elementos seguidos en linea*/
+    color:inherit; /*herede el color de papa rey xD*/
+    text-decoration:none; /*Quitar el borde*/
+    font-weight: 300; /*Tamaño de fuente*/
+    padding:25px 20px 25px; /*Padding hacia arriba, espacio entre entre elementos (iz-der) y distancia hacia abajo
+    height: inherit; /*Que herede la altura*/
+    font-family: 'Planet Megapolis', sans-serif;
+    font-weight: 700;
+    
+
+  
+}
+
+nav > figure {
+    display: inline-block; /**lo vuelve un eelemento lineal/*/
+    vertical-align: top; /*Alinea verticalmente elementos*/
+    margin-top: 10px;
+    margin-left: 20px;
+    
+    
+    /*Adaptaciones del logo*/
+           
+}
+
+nav > figure > img {
+    width: 50px;
+    height: 30px;
+    margin-left: 100px;
+}
+nav > figure > h2{
+    display: inline-block; /**lo vuelve un eelemento lineal/*/
+    vertical-align: top; /*Alinea verticalmente elementos*/
+    position: absolute; /*Absoluta con respecto a su contenedor, sirvio para acomodarla al lado del icono*/
+    
+    padding-left: 20px;
+    padding-top: 0;
+    /*font-family: 'OpenDyslexicAlta', sans-serif;*/
+    /*font-family: 'Billy Whites', sans-serif; */
+    /*font-family: 'Planet Megapolis', sans-serif;*/ 
+    font-family: 'Master Of Break', sans-serif;
+    font-weight: 700;
+    font-size:xx-large;
+
+}
+
+#welcomeBanner{
+    height: cover;
+    width: 100%; /*Adapto posicion de mi imagen de bienvenida*/
+    
+}
+
+header{
+   height: auto; /*posicion y tamaño del header */
+   width: 100vw;
+}
+
+main{
+    background-color:  #35495e; 
+}
+footer{
+    background-color: #ff7e67; 
+}
