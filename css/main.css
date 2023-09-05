@@ -17,6 +17,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--second-color); 
 }
 
 
@@ -49,7 +50,7 @@ nav > article > a{
 nav > figure {
     display: inline-block; /**lo vuelve un eelemento lineal/*/
     vertical-align: top; /*Alinea verticalmente elementos*/
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     
     
@@ -61,6 +62,7 @@ nav > figure > img {
     width: 50px;
     height: 30px;
     margin-left: 100px;
+    margin-top: 5px;
 }
 nav > figure > h2{
     display: inline-block; /**lo vuelve un eelemento lineal/*/
@@ -80,8 +82,7 @@ nav > figure > h2{
 
 #welcomeBanner{
     height: cover;
-    width: 100%; /*Adapto posicion de mi imagen de bienvenida*/
-    
+    width: 100%; /*Adapto posicion de mi imagen de bienvenida*/    
 }
 
 header{
@@ -89,9 +90,111 @@ header{
    width: 100vw;
 }
 
+.nav__options{
+    font-family: 'Master Of Break', sans-serif; 
+    margin: 30px;
+    text-align: center;
+    font-size:xx-large;
+  }
 main{
-    background-color:  #35495e; 
+    background-color:  #35495ef0; 
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin:20px;
+    
 }
-footer{
-    background-color: #ff7e67; 
+main > article{
+    width: 260px;
+    height: 320px;
+    margin:30px;
+    border-radius: 10px;;
+    background-color: #fff;
+    display:inline-block;
 }
+
+main > article > h3{
+    text-align: center;
+    justify-content: center;
+    margin:10px;
+}
+
+main > article > img {
+    
+    width: 90%;
+    margin: 0 13px;
+    object-fit: cover;
+   
+}
+main > article > p {
+    text-align:justify;
+    justify-content: space-around;
+    margin:10px
+    
+
+}
+
+
+.nav__marcos{
+        background-color:  #35495ef0;
+        border-radius: 20px;
+        margin:auto;
+        margin-bottom: 20px;
+        width: 70%;
+        height: 600px;
+        animation: nav__marcos 10s infinite linear alternate;/*Darle animacion a algo especifico en mi html__Tiempo de transicion__ especifico que sea infinita__en que forma quiero que me lo muestre horizontal vertical (linear).....__alternate: vaya alternando las posiciones de mis imagenes en la transiciond del banner*/
+        background-size: 100% 100%; /*El background ocupe el 100% de alto y 100% de ancho, sin esto la imagen no se muestra por completo*/
+        position: relative; /*Aqui me sirve por que el diseño del baner esta uno encima del otro*/
+        display: flex; /*Como se alinea*/
+        justify-content: center; /*Justifica todo el bloque*/
+        align-items: center; /*alinie los items al centro*/
+      }
+      @keyframes nav__marcos {/*Darle sentido a la propiedad banner, le especifico que tiene que hacer ese elemento*/
+        /*que puedo hacer con keyframes?*/
+        0%, 20% { /*Periodo de tiempo, en este caso es un 1/4*/
+            background-image: url("/img/bikepacking.jpg");
+        }
+        25%, 45%{ /*Intervalo de tiempo*/
+            background-image: url("/img/assambly.jpg");  
+        }
+        50%, 70% { /*Periodo de tiempo, en este caso es un 1/4*/
+            background-image: url("/img/frame1.jpg");
+        }
+        75%, 100%{ /*Intervalo de tiempo*/
+            background-image: url("/img/frame2.jpg");  
+            
+         }
+    
+    }
+    footer article{
+        
+        width: 100%;
+        max-width: 550px;
+        text-align: center; /*Alineo textos*/
+    }
+    
+    footer > article > h3 {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        
+    }
+    footer > article > p{
+        color: #c7c7c7;
+        line-height: 1.7; /*altura de linea*/
+        margin-bottom: 30px;
+    }
+    footer{
+        background-color: #ff7e67; 
+        display: flex; /*Como se alinea*/
+        justify-content: center; /*Justifica todo el bloque*/
+        align-items: center; /*alinie los items al centro*/
+        height: 400px;
+    }
+
+    #inicio{
+        margin:20px 80px;
+        align-items: center;
+        justify-content: center;
+    }
